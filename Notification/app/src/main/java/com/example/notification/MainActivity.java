@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         simpleCalendarView = (CalendarView) findViewById(R.id.simpleCalendarView);
         TextView textView = (TextView) findViewById(R.id.DateSelected);
 
-        SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy");
+       final DateFormat format = new SimpleDateFormat("MM/dd/yyyy");
         String time = format.format(new Date());
         textView.setText(time);
         simpleCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
